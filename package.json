@@ -29,7 +29,6 @@
 	},
 	"devDependencies": {
 		"@cloudflare/wrangler": "^1.6.0",
-		"@dollarshaveclub/cloudworker": "^0.1.2",
 		"ava": "^2.4.0",
 		"esm": "^3.2.25",
 		"lodash.pick": "^4.4.0",

@@ -1,9 +1,6 @@
 name = "cf-image-proxy"
 type = "javascript"
+main = "dist/main.js"
 webpack_config = "webpack.config.js"
-account_id = "TODO"
 workers_dev = true
-
-[env.production]
-zone_id = "TODO"
-route = "TODO"
+compatibility_date = "2023-04-22"
