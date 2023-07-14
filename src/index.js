@@ -32,6 +32,9 @@ async function handleFetchEvent(event) {
 
 		const { originReq } = await resolveRequest(event, request)
 
+		if (!originReq.url.match(/^https?/))
+			return new Response(JSON.stringify({code: 400, error: 'invalid request', type: 'client error'}), { status: 400, headers: globalResHeaders });
+
 		try {
 			const cacheKey = await getRequestCacheKey(originReq)
 			const originRes = await fetchCache({
